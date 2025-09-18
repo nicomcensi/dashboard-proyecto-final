@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h1>Dashboard de Análisis Estratégico</h1>
+        <div>
+            <span>Bienvenido, {{ username }}!</span>
+            <a href="/logout" style="margin-left: 15px;">Cerrar Sesión</a>
+        </div>
+    </div>
+    <hr>
+    
+    <h2>Análisis de Productos</h2>
+    
+    <div id="grafico-pareto">
+        {{ grafico_html|safe }}
+    </div>
+
+</body>
+</html>
